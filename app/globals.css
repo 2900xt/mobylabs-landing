@@ -1,15 +1,23 @@
 @import "tailwindcss";
 
+/* Ubuntu Font */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-ubuntu: 'Ubuntu', 'Inter', sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +25,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 body {
