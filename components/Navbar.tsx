@@ -20,32 +20,43 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-6">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
               pathname === "/" ? "text-white border-b-2 border-white" : "text-white/90 hover:text-white"
             }`}
           >
             Home
           </Link>
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
               pathname === "/about" ? "text-white border-b-2 border-white" : "text-white/90 hover:text-white"
             }`}
           >
             About Us
           </Link>
-          <Link 
-            href="/live-map" 
+          <Link
+            href="/live-map"
             className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
               pathname === "/live-map" ? "text-white border-b-2 border-white" : "text-white/90 hover:text-white"
             }`}
           >
             Live Map
           </Link>
+          <Link
+            href="/api-docs"
+            className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
+              pathname === "/api-docs" ? "text-white border-b-2 border-white" : "text-white/90 hover:text-white"
+            }`}
+          >
+            API Docs
+          </Link>
+          <Link href="/signup" className="px-5 py-2 bg-white text-blue-600 font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-blue-50 shadow-md text-sm">
+            Sign Up
+          </Link>
           <Link href="/contact" className="px-5 py-2 bg-white text-blue-600 font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-blue-50 shadow-md text-sm">
-            Contact Us
+            Contact
           </Link>
         </div>
 
