@@ -31,10 +31,10 @@ export default function BlogPage() {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-blue-200 hover:border-blue-400 hover:-translate-y-2 hover:scale-[1.02]"
+                  className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-blue-200 hover:border-blue-400 hover:-translate-y-2 hover:scale-[1.02] flex flex-col"
                 >
                   {/* Card Content */}
-                  <div className="p-8">
+                  <div className="p-8 flex-grow">
                     {/* Metadata */}
                     <div className="flex items-center gap-3 mb-4 text-sm text-gray-600">
                       <span>{post.date}</span>
@@ -64,7 +64,7 @@ export default function BlogPage() {
                   </div>
 
                   {/* Bottom Accent */}
-                  <div className="h-1 bg-gradient-to-r from-blue-600 to-cyan-600 group-hover:h-2 transition-all duration-300" />
+                  <div className="h-1 bg-gradient-to-r from-blue-600 to-cyan-600 group-hover:h-2 transition-all duration-300 rounded-b-2xl" />
                 </Link>
               ))}
             </div>
