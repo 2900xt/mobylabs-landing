@@ -34,7 +34,7 @@ export default function LiveMapPage() {
           {/* Demo Notice */}
           <div className="bg-blue-600 text-white rounded-xl p-6 mb-8 text-center">
             <p className="text-lg font-semibold mb-2">
-              🐋 Demo Mode - This is a demonstration with simulated data
+              Demo Mode - This is a demonstration with simulated data
             </p>
             <p className="text-sm mb-3">
               Interested in a real whale detection solution for your organization?

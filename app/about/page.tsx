@@ -1,6 +1,10 @@
+import { Profile } from "@/components/about/Profile";
 import Image from "next/image";
 
 export default function AboutPage() {
+
+  // When you click on my profile, redirect to my personal website
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-900 via-blue-800 to-cyan-900">
       {/* Header Section */}
@@ -10,7 +14,7 @@ export default function AboutPage() {
             About Moby Labs
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Pioneering marine conservation technology to protect endangered whales
+            Two dudes trying to save the whales :D
           </p>
         </div>
       </div>
@@ -27,36 +31,10 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Team Member 1 */}
-            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-              <div className="flex flex-col items-center text-center">
-                <Image src="/ML.png" alt="Matthew Li" width={128} height={128} className="w-32 h-32 rounded-full mb-6 shadow-lg" />
-                <h3 className="text-2xl font-bold text-white mb-2">Matthew Li</h3>
-                <p className="text-cyan-300 font-semibold mb-4">Co-Founder & CEO</p>
-                <p className="text-white/80 leading-relaxed">
-                  Hi! I'm Matthew, and I love using AI to solve real-world problems. I've done AI research at CMU and Princeton, but the one thing I love more than ChatGPT is whales!
-                </p>
-                <div className="mt-6 flex gap-4">
-                  <div className="px-4 py-2 bg-blue-500/30 rounded-lg text-sm text-white">AI/ML</div>
-                  <div className="px-4 py-2 bg-cyan-500/30 rounded-lg text-sm text-white">Computer Vision</div>
-                </div>
-              </div>
-            </div>
+            <Profile name="Matthew Li" role="Co-Founder & CEO" bio="Hi! I'm Matthew, and I love using AI to solve real-world problems. I've done AI research at CMU and Princeton, but the one thing I love more than ChatGPT is whales!" imgSrc="/ML.png" skills={["AI/ML", "Computer Vision"]} website="https://www.linkedin.com/in/matthew-li-a49516258/" />
 
             {/* Team Member 2 */}
-            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-cyan-400/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-              <div className="flex flex-col items-center text-center">
-                <Image src="/TR.jpg" alt="Taha Rawjani" width={128} height={128} className="w-32 h-32 rounded-full mb-6 shadow-lg" />
-                <h3 className="text-2xl font-bold text-white mb-2">Taha Rawjani</h3>
-                <p className="text-cyan-300 font-semibold mb-4">Co-Founder & CTO</p>
-                <p className="text-white/80 leading-relaxed">
-                  Hi! I'm Taha, and I LOVE WHALES!!! I've written my own OS and custom programming language, and I also love working on the embedded components of MobyGlobal.
-                </p>
-                <div className="mt-6 flex gap-4">
-                  <div className="px-4 py-2 bg-cyan-500/30 rounded-lg text-sm text-white">Research</div>
-                  <div className="px-4 py-2 bg-blue-500/30 rounded-lg text-sm text-white">Embedded Systems</div>
-                </div>
-              </div>
-            </div>
+            <Profile name="Taha Rawjani" role="Co-Founder & CTO" bio="Hi! I'm Taha, and I LOVE WHALES!!! I've written my own OS and custom programming language, and I also love working on the embedded components of MobyGlobal." imgSrc="/TR.jpg" skills={["Research", "Embedded Systems"]} website="https://taharawjani.org" />
           </div>
 
           {/* Call to Action */}
@@ -65,7 +43,7 @@ export default function AboutPage() {
               Join Us in Our Mission
             </h3>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Whether you're a shipping company, researcher, or conservation organization,
+              Whether you're a shipping company, researcher, conservation organization, or just a whale enthusiast,
               let's work together to protect our oceans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -73,7 +51,7 @@ export default function AboutPage() {
                 Get in Touch
               </a>
               <a href="/live-map" className="px-8 py-4 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 transition-all duration-300 hover:scale-105 shadow-lg border-2 border-white/30">
-                View Live Map
+                View Demo Map
               </a>
             </div>
           </div>

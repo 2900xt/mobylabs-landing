@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               href="/live-map"
               className="px-8 py-4 bg-white text-blue-600 font-bold rounded-lg border-2 border-blue-600 transition-all duration-300 hover:scale-105 hover:bg-blue-50"
             >
-              View Live Map
+              View Demo Map
             </Link>
           </div>
         </div>

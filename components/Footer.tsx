@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <span className="text-2xl">🐋</span>
+              <Image src="/logo.png" alt="Moby Labs Logo" width={32} height={32} />
               Moby Labs
             </h3>
             <p className="text-white/80 text-sm">
@@ -34,7 +35,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/live-map" className="text-white/80 hover:text-white transition-colors">
-                  Live Map
+                  Demo Map
                 </Link>
               </li>
               <li>
@@ -76,7 +77,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li>📧 info@mobylabs.com</li>
+              <li>
+                <a href="mailto:contact@mobylabs.org" className="text-blue-600 hover:underline">contact@mobylabs.org</a>
+              </li>
               <li>🌐 Leesburg, VA</li>
               <li className="pt-2">
                 <Link href="/contact" className="inline-block px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors">

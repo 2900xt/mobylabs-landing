@@ -42,7 +42,7 @@ export default function Navbar() {
               pathname === "/live-map" ? "text-white border-b-2 border-white" : "text-white/90 hover:text-white"
             }`}
           >
-            Live Map
+            Demo Map
           </Link>
           <Link
             href="/api-docs"

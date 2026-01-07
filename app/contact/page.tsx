@@ -69,7 +69,7 @@ export default function ContactPage() {
                   : "bg-white text-gray-700 border-2 border-gray-200 hover:border-cyan-300"
               }`}
             >
-              SUAM System
+              Moby Labs SUAM
               <div className="text-xs font-normal mt-1">For Individual Vessels</div>
             </button>
           </div>
@@ -296,7 +296,7 @@ export default function ContactPage() {
               Have questions? Contact us directly:
             </p>
             <p className="text-lg font-semibold text-gray-900">
-              Email: <a href="mailto:contact@mobylabs.com" className="text-blue-600 hover:underline">contact@mobylabs.com</a>
+              Email: <a href="mailto:contact@mobylabs.org" className="text-blue-600 hover:underline">contact@mobylabs.org</a>
             </p>
           </div>
         </div>

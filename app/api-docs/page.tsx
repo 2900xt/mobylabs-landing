@@ -132,7 +132,7 @@ export default function ApiDocsPage() {
             Moby Labs API Documentation
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Integrate real-time whale detection data into your applications
+            Access real-time whale detection data from any buoys in our global network.
           </p>
         </div>
 
