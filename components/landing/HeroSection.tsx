@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export function HeroSection() {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -57,8 +55,10 @@ export function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link
-            href="/signup"
+          <a
+            href="https://app.mobylabs.org"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-lg font-bold rounded-2xl hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(6,182,212,0.3)] hover:shadow-[0_0_60px_rgba(6,182,212,0.5)] flex items-center justify-center gap-2 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -68,8 +68,8 @@ export function HeroSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </span>
-          </Link>
-          
+          </a>
+
           <a
             href="https://cal.com/ahat-rawjani/moby-labs-demo"
             target="_blank"

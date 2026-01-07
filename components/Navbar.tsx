@@ -145,12 +145,14 @@ export default function Navbar() {
           >
             Blog
           </Link>
-          <Link
-            href="/signup"
+          <a
+            href="https://app.mobylabs.org"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2 bg-white/10 backdrop-blur-md text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-white/20 border border-white/20 hover:border-white/40 text-sm"
           >
             Sign Up
-          </Link>
+          </a>
           <Link
             href="/contact"
             className="px-5 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] text-sm"
