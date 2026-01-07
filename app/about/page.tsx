@@ -1,4 +1,5 @@
 import { Profile } from "@/components/about/Profile";
+import { TimelineSection } from "@/components/landing/TimelineSection";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -18,6 +19,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+
 
       {/* Team Section */}
       <section id="team" className="py-20 px-6 bg-gradient-to-b from-transparent to-blue-950/50">
