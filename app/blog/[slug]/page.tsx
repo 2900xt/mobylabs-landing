@@ -83,27 +83,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <article className="relative z-10 pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 md:p-10 shadow-2xl">
-            <div className="prose prose-lg prose-invert max-w-none
-              prose-headings:font-bold prose-headings:text-white prose-headings:mt-8 prose-headings:mb-4
-              prose-h1:text-3xl prose-h1:bg-gradient-to-r prose-h1:from-cyan-300 prose-h1:to-blue-300 prose-h1:bg-clip-text prose-h1:text-transparent
-              prose-h2:text-2xl prose-h2:text-cyan-300 prose-h2:border-b prose-h2:border-white/10 prose-h2:pb-2
-              prose-h3:text-xl prose-h3:text-blue-300
-              prose-p:text-white/80 prose-p:leading-relaxed prose-p:my-4
-              prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:text-cyan-300 prose-a:font-medium prose-a:transition-colors
-              prose-strong:text-white prose-strong:font-bold
-              prose-em:text-cyan-200/90 prose-em:not-italic prose-em:font-medium
-              prose-code:text-cyan-300 prose-code:bg-white/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
-              prose-pre:bg-slate-900/80 prose-pre:border prose-pre:border-white/10 prose-pre:rounded-xl prose-pre:shadow-lg
-              prose-blockquote:border-l-4 prose-blockquote:border-cyan-400 prose-blockquote:bg-cyan-500/10 prose-blockquote:rounded-r-lg prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:not-italic prose-blockquote:text-white/80
-              prose-ul:text-white/80 prose-ul:my-4
-              prose-ol:text-white/80 prose-ol:my-4
-              prose-li:my-1 prose-li:marker:text-cyan-400
-              prose-hr:border-white/10 prose-hr:my-8
-              prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-white/10
-              prose-table:border prose-table:border-white/10 prose-table:rounded-lg prose-table:overflow-hidden
-              prose-th:bg-white/10 prose-th:text-white prose-th:font-bold prose-th:p-3
-              prose-td:p-3 prose-td:border-t prose-td:border-white/10 prose-td:text-white/70
-            ">
+            <div className="prose prose-lg prose-dark max-w-none">
               <MDXRemote source={content} />
             </div>
           </div>
