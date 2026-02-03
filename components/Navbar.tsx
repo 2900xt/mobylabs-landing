@@ -68,19 +68,17 @@ export default function Navbar() {
           >
             <Link
               href="/"
-              className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
-                pathname === "/"
+              className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${pathname === "/"
                   ? "text-cyan-300 border-b-2 border-cyan-400"
                   : "text-white/70 hover:text-white"
-              }`}
+                }`}
             >
               Home
             </Link>
             {/* Dropdown */}
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 transition-all duration-200 ${
-                homeDropdownOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1"
-              }`}
+              className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 transition-all duration-200 ${homeDropdownOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1"
+                }`}
             >
               <div className="bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.4)] py-2 min-w-[140px]">
                 {homeDropdownItems.map((item) => (
@@ -107,11 +105,10 @@ export default function Navbar() {
           </div>
           <Link
             href="/about"
-            className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
-              pathname === "/about"
+            className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${pathname === "/about"
                 ? "text-cyan-300 border-b-2 border-cyan-400"
                 : "text-white/70 hover:text-white"
-            }`}
+              }`}
           >
             About Us
           </Link>
@@ -137,22 +134,19 @@ export default function Navbar() {
           </Link>*/}
           <Link
             href="/blog"
-            className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${
-              pathname.startsWith("/blog")
+            className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${pathname.startsWith("/blog")
                 ? "text-cyan-300 border-b-2 border-cyan-400"
                 : "text-white/70 hover:text-white"
-            }`}
+              }`}
           >
             Blog
           </Link>
-          <a
-            href="https://app.mobylabs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/app"
             className="px-5 py-2 bg-white/10 backdrop-blur-md text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-white/20 border border-white/20 hover:border-white/40 text-sm"
           >
             Sign Up
-          </a>
+          </Link>
           <Link
             href="/contact"
             className="px-5 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] text-sm"
