@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+
+  if (pathname && pathname.startsWith('/app')) return null;
 
   return (
     <footer className="bg-gradient-to-r from-blue-900 to-cyan-900 text-white">

@@ -31,6 +31,8 @@ export default function Navbar() {
     }
   };
 
+  if (pathname && pathname.startsWith('/app')) return null;
+
   const performScroll = (sectionIndex: number) => {
     // Find the ProcessSection container (it has the specific height style)
     const processSection = document.querySelector('section[style*="height"]');
@@ -69,8 +71,8 @@ export default function Navbar() {
             <Link
               href="/"
               className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${pathname === "/"
-                  ? "text-cyan-300 border-b-2 border-cyan-400"
-                  : "text-white/70 hover:text-white"
+                ? "text-cyan-300 border-b-2 border-cyan-400"
+                : "text-white/70 hover:text-white"
                 }`}
             >
               Home
@@ -106,8 +108,8 @@ export default function Navbar() {
           <Link
             href="/about"
             className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${pathname === "/about"
-                ? "text-cyan-300 border-b-2 border-cyan-400"
-                : "text-white/70 hover:text-white"
+              ? "text-cyan-300 border-b-2 border-cyan-400"
+              : "text-white/70 hover:text-white"
               }`}
           >
             About Us
@@ -135,8 +137,8 @@ export default function Navbar() {
           <Link
             href="/blog"
             className={`font-semibold transition-all duration-300 hover:scale-105 text-sm ${pathname.startsWith("/blog")
-                ? "text-cyan-300 border-b-2 border-cyan-400"
-                : "text-white/70 hover:text-white"
+              ? "text-cyan-300 border-b-2 border-cyan-400"
+              : "text-white/70 hover:text-white"
               }`}
           >
             Blog
