@@ -23,10 +23,10 @@ export default function Home() {
   const [showApiKey, setShowApiKey] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  // Redirect unauthenticated users to signup
+  // Redirect unauthenticated users to login
   useEffect(() => {
     if (!loading && !user) {
-      router.push("/app/auth/signup");
+      router.push("/app/auth/login");
     }
   }, [user, loading, router]);
 
@@ -239,10 +239,10 @@ export default function Home() {
                   </div>
                   <span
                     className={`text-xs font-semibold px-2 py-0.5 rounded ${item.status >= 200 && item.status < 300
-                        ? "bg-emerald-500/20 text-emerald-400"
-                        : item.status >= 400
-                          ? "bg-red-500/20 text-red-400"
-                          : "bg-yellow-500/20 text-yellow-400"
+                      ? "bg-emerald-500/20 text-emerald-400"
+                      : item.status >= 400
+                        ? "bg-red-500/20 text-red-400"
+                        : "bg-yellow-500/20 text-yellow-400"
                       }`}
                   >
                     {item.status}
